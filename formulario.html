@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO NOSSA EMPRESA</title>
+
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen" />
+
+    <script src="./atividade14.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">FORMULÁRIO DOS FUNCIONÁRIOS </a>
+
+        </nav>
+    </header>
+    <div>
+        <h3>PREENCHA CORRETAMENTE O FORMULÁRIO</h3>
+        <h4 id="erro"></h4>
+        <form method="get" action="">
+    
+            <fieldset>
+                <legend>Dados do usuario</legend>
+                <label>Nome</label><br>
+                <input id='nome'type="text" name="Nome"><br><br>
+    
+                <label>Idade</label><br>
+                <input id="idade" type="number" name="Idade"><br><br>
+    
+            </fieldset>
+    
+            <fieldset>
+                <legend>Cargo</legend>
+                <select id="cargo" name="Cargo" onchange="trocaEspecificacao()">
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                    <option value="Gerente">Gerente</option>
+                </select>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset id="especificacoes">
+                <legend>Especificações</legend>
+
+                <label>Linguagem de Programação</label><br>
+                <input id="linguagem" type="text" name="Linguagem de Programação">
+            </fieldset>
+
+        </form>
+        
+        <button type="button" onclick="enviar()">Salvar</button>
+
+        <h3 id="seApresentar"></h3>
+        <h3 id="trabalhando"></h3>
+        <h3 id="atividade"></h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(255, 189, 90, 0.807);
+}
+
+
+header{
+    background-color: rgb(213, 123, 4);
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+
+    nav{
+        a {
+            text-decoration-line: none;
+            color: aliceblue;
+        }
+    }
+}
+
+div{
+    text-align: center;
+    color: darkorange;
+    
+    fieldset{
+        border: none;
+    }
+    
+
+    legend, select, label, input {
+        font-size: 15px;
+        color: chocolate;
+    }
+}
+button{
+    text-align: center;
+    color:orange;
+    font-size: 15px;
+    background-color: white;
+}
